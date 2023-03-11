@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="347.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BillsController">
+   <children>
+      <Label layoutX="106.0" layoutY="14.0" text="Invoice Generator">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="70.0" prefHeight="17.0" prefWidth="66.0" text="Enter Date" />
+      <Label layoutX="14.0" layoutY="392.0" prefHeight="17.0" prefWidth="66.0" text="Total Items" />
+      <Label layoutX="14.0" layoutY="111.0" prefHeight="17.0" prefWidth="92.0" text="Customer Name" />
+      <Label layoutX="14.0" layoutY="231.0" prefHeight="17.0" prefWidth="66.0" text="Item Price" />
+      <Label layoutX="14.0" layoutY="190.0" prefHeight="17.0" prefWidth="66.0" text="Item Name" />
+      <Label layoutX="14.0" layoutY="273.0" prefHeight="17.0" prefWidth="66.0" text="Item Qty" />
+      <Label layoutX="14.0" layoutY="345.0" prefHeight="17.0" prefWidth="66.0" text="Sub total" />
+      <Label layoutX="14.0" layoutY="429.0" prefHeight="17.0" prefWidth="66.0" text="Total Price" />
+      <TextField fx:id="fxTotalPrice" disable="true" layoutX="123.0" layoutY="425.0" prefHeight="25.0" prefWidth="175.0" />
+      <TextField fx:id="fxItemName" disable="true" layoutX="123.0" layoutY="186.0" prefHeight="25.0" prefWidth="175.0" />
+      <TextField fx:id="fxItemPrice" disable="true" layoutX="123.0" layoutY="227.0" prefHeight="25.0" prefWidth="175.0" />
+      <TextField fx:id="fxItemQty" disable="true" layoutX="123.0" layoutY="269.0" prefHeight="25.0" prefWidth="175.0" />
+      <TextField fx:id="fxSubTotal" disable="true" layoutX="123.0" layoutY="341.0" prefHeight="25.0" prefWidth="175.0" />
+      <TextField fx:id="fxTotalItems" disable="true" layoutX="123.0" layoutY="388.0" prefHeight="25.0" prefWidth="175.0" />
+      <TextField fx:id="fxCustomerName" layoutX="122.0" layoutY="107.0" prefHeight="25.0" prefWidth="175.0" />
+      <Button fx:id="fxAddButton" disable="true" layoutX="173.0" layoutY="302.0" mnemonicParsing="false" onAction="#addItems" prefHeight="25.0" prefWidth="45.0" text="Add" />
+      <Button fx:id="fxResetButton" disable="true" layoutX="239.0" layoutY="302.0" mnemonicParsing="false" onAction="#resetItems" text="Reset" />
+      <DatePicker fx:id="fxDate" layoutX="123.0" layoutY="66.0" />
+      <Button fx:id="fxPrintButton" disable="true" layoutX="170.0" layoutY="461.0" mnemonicParsing="false" onAction="#printInvoice" prefHeight="25.0" prefWidth="51.0" text="Print" />
+      <Button fx:id="fxDeleteButton" disable="true" layoutX="237.0" layoutY="461.0" mnemonicParsing="false" onAction="#deleteInvoice" text="Delete" />
+      <TextField fx:id="fxBillNum" disable="true" layoutX="152.0" layoutY="66.0" opacity="0.0" visible="false" />
+      <Button fx:id="prepBill" layoutX="158.0" layoutY="145.0" mnemonicParsing="false" onAction="#prepareBill" text="Prepare Bill" />
+   </children>
+</AnchorPane>

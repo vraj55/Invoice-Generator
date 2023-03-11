@@ -1,0 +1,1 @@
+java -jar InvoiceGeneratorBeta.jar
